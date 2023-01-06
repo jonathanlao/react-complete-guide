@@ -1,8 +1,8 @@
 import ExpenseItem from "./ExpenseItem";
-import Card from "./Card.js"
+import Card from "./Card"
 import "./ExpenseList.css"
 
-function ExpenseList (props) {
+const ExpenseList = props => {
   const expenseList = props.expenses.map((expense) => (
     <ExpenseItem
       title={expense.title}
